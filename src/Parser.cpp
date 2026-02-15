@@ -6,7 +6,7 @@
 /*   By: daeunki2 <daeunki2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 16:34:43 by daeunki2          #+#    #+#             */
-/*   Updated: 2026/02/15 18:18:45 by daeunki2         ###   ########.fr       */
+/*   Updated: 2026/02/15 18:21:28 by daeunki2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -240,7 +240,8 @@ void Parser::print_cmds() const
         } 
 		else
 		{
-            for (size_t j = 0; j < cmd.args.size(); ++j) {
+            for (size_t j = 0; j < cmd.args.size(); ++j)
+			{
                 std::cout << "[" << cmd.args[j] << "] ";
             }
         }
