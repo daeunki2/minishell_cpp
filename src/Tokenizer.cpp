@@ -6,7 +6,7 @@
 /*   By: daeunki2 <daeunki2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/12 17:58:09 by daeunki2          #+#    #+#             */
-/*   Updated: 2026/02/15 15:10:37 by daeunki2         ###   ########.fr       */
+/*   Updated: 2026/02/15 17:17:08 by daeunki2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -190,9 +190,9 @@ void Tokenizer::print_tokens() const
 
     for (size_t i = 0; i < _tokens.size(); ++i)
     {
-        // 1. TokenType을 문자열로 변환
         std::string type_name;
-        switch (_tokens[i].token_type) {
+        switch (_tokens[i].token_type)
+        {
             case WORD:         type_name = "WORD"; break;
             case PIPE:         type_name = "PIPE"; break;
             case REDIRECT_IN:  type_name = "REDIRECT_IN"; break;
@@ -202,9 +202,9 @@ void Tokenizer::print_tokens() const
             default:           type_name = "UNKNOWN"; break;
         }
 
-        // 2. WordState(QuoteState)를 문자열로 변환
         std::string state_name;
-        switch (_tokens[i].word_type) {
+        switch (_tokens[i].word_type)
+        {
             case NORMAL:       state_name = "NORMAL"; break;
             case SINGLE_QUOTE: state_name = "SINGLE_QUOTE"; break;
             case DOUBLE_QUOTE: state_name = "DOUBLE_QUOTE"; break;
