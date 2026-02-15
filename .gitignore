@@ -1,0 +1,28 @@
+# ===== build outputs =====
+*.o
+*.a
+*.out
+*.exe
+
+# ===== minishell binaries =====
+minishell
+a.out
+minishell_test
+
+# ===== logs =====
+*.log
+
+# ===== macOS =====
+.DS_Store
+
+# ===== VSCode =====
+.vscode/
+
+# ===== temp / backups =====
+*~
+*.swp
+*.swo
+
+# ===== unit tests outputs =====
+unit_test/*.o
+unit_test/*.out
