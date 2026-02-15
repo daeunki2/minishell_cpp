@@ -6,7 +6,7 @@
 #    By: daeunki2 <daeunki2@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/12 16:11:30 by daeunki2          #+#    #+#              #
-#    Updated: 2026/02/15 15:51:03 by daeunki2         ###   ########.fr        #
+#    Updated: 2026/02/15 16:31:09 by daeunki2         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,8 +26,8 @@ OBJ_DIR = obj
 # Sources
 # -------------------------
 SRCS = $(SRC_DIR)/main.cpp \
-       $(SRC_DIR)/Lexer.cpp \
-	   $(SRC_DIR)/Tokenizer.cpp
+		$(SRC_DIR)/Lexer.cpp \
+		$(SRC_DIR)/Tokenizer.cpp
 
 TEST_SRCS = $(TEST_DIR)/token_test.cpp \
             $(SRC_DIR)/Lexer.cpp \
